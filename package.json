@@ -1,6 +1,6 @@
 {
   "name": "express-coffeescript-generator",
-  "description": "Express' application generator",
+  "description": "express-generator for coffeescript",
   "version": "4.11.0",
   "author": "Edward Kim <onward.edkim@gmail.com>",
   "keywords": [
@@ -15,7 +15,10 @@
     "app",
     "api"
   ],
-  "repository": "expressjs/generator",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/haruair/express-coffeescript-generator.git"
+  },
   "license": "MIT",
   "dependencies": {
     "coffee-script": "^1.8.0",
