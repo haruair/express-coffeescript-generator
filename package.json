@@ -1,17 +1,10 @@
 {
-  "name": "express-generator",
+  "name": "express-coffeescript-generator",
   "description": "Express' application generator",
   "version": "4.11.0",
-  "author": "TJ Holowaychuk <tj@vision-media.ca>",
-  "contributors": [
-    "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
-    "Ciaran Jessup <ciaranj@gmail.com>",
-    "Douglas Christopher Wilson <doug@somethingdoug.com>",
-    "Guillermo Rauch <rauchg@gmail.com>",
-    "Jonathan Ong <me@jongleberry.com>",
-    "Roman Shtylman <shtylman+expressjs@gmail.com>"
-  ],
+  "author": "Edward Kim <onward.edkim@gmail.com>",
   "keywords": [
+    "coffeescript",
     "express",
     "framework",
     "sinatra",
@@ -25,14 +18,15 @@
   "repository": "expressjs/generator",
   "license": "MIT",
   "dependencies": {
+    "coffee-script": "^1.8.0",
     "commander": "2.6.0",
     "mkdirp": "0.5.0",
     "sorted-object": "1.0.0"
   },
-  "main": "bin/express",
+  "main": "bin/express-cs",
   "preferGlobal": true,
   "bin": {
-    "express": "./bin/express"
+    "express-cs": "./bin/express-cs"
   },
   "devDependencies": {
     "after": "0.8.1",
@@ -49,7 +43,7 @@
     "templates/"
   ],
   "scripts": {
-    "test": "mocha --reporter spec --bail --check-leaks test/",
-    "test-travis": "mocha --reporter spec --bail --check-leaks test/"
+    "test": "mocha --reporter spec --bail --check-leaks test/ --compilers coffee:coffee-script/register",
+    "test-travis": "mocha --reporter spec --bail --check-leaks test/ --compilers coffee:coffee-script/register"
   }
 }
