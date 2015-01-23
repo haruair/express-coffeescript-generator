@@ -65,7 +65,7 @@ describe 'express(1)', ->
             "start": "coffee ./bin/www"
           },
           "dependencies": {
-            "body-parser": "~1.10.1",
+            "body-parser": "~1.10.2",
             "coffee-script": "^1.8.0",
             "cookie-parser": "~1.3.3",
             "debug": "~2.1.1",
