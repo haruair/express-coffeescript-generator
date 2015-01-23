@@ -69,7 +69,7 @@ describe 'express(1)', ->
             "coffee-script": "^1.8.0",
             "cookie-parser": "~1.3.3",
             "debug": "~2.1.1",
-            "express": "~4.11.0",
+            "express": "~4.11.1",
             "jade": "~1.9.0",
             "morgan": "~1.5.1",
             "serve-favicon": "~2.2.0"
