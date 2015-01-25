@@ -1,7 +1,7 @@
 {
   "name": "express-coffeescript-generator",
   "description": "express-generator for coffeescript",
-  "version": "4.11.1-a",
+  "version": "4.11.1-b",
   "author": "Edward Kim <onward.edkim@gmail.com>",
   "keywords": [
     "coffeescript",
