@@ -11,11 +11,12 @@ normalizePort = (val) ->
 
   # named pipe
   if isNaN port
-    return val
+    val
   # port number
   else if port >= 0
-    return port
-  false # this function always retruns FALSE!!!
+    port
+  else
+    false
 
 # Event listener for HTTP server "error" event.
 onError = (error) ->
